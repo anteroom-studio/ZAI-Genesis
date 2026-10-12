@@ -1,0 +1,27 @@
+name: Verify research probes
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  agreement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install research dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Example output
+        run: python scripts/agreement_probe.py
