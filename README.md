@@ -6,7 +6,7 @@ ZAI Genesis is a Python research program that assembles historical market data, 
 
 It is **one program developed within Anteroom Studio**, the company founded by ZAI. It is not the ZAI intelligence project itself.
 
-**[Discuss the methodology](https://github.com/anteroom-studio/ZAI-Genesis/discussions)** · **[Explore the code](https://github.com/anteroom-studio/ZAI-Genesis)**
+**[Join the methodology challenge](https://github.com/anteroom-studio/ZAI-Genesis/issues/1)** · **[Discuss research ideas](https://github.com/anteroom-studio/ZAI-Genesis/discussions)** · **[Explore the code](https://github.com/anteroom-studio/ZAI-Genesis)**
 
 ---
 
@@ -70,7 +70,7 @@ If you test Genesis, a useful contribution would be:
 3. Test whether changing one engine materially changes the overall score.
 4. Report your dataset dates, reproducible method, failure cases, and what you would change.
 
-[**Open a methodology discussion →**](https://github.com/anteroom-studio/ZAI-Genesis/discussions)  
+[**Review the active experiment →**](https://github.com/anteroom-studio/ZAI-Genesis/issues/1) · [**Open a methodology discussion →**](https://github.com/anteroom-studio/ZAI-Genesis/discussions)  
 [**Report a reproducible implementation bug →**](https://github.com/anteroom-studio/ZAI-Genesis/issues/new)
 
 ## Scope
