@@ -1,10 +1,10 @@
 # ZAI Genesis
 
-Market-cycle and natural-pattern research terminal.
+Market-cycle and natural-pattern research program (Python terminal).
 
 ZAI Genesis is a Python-based research system for exploring market behavior through historical cycles, technical structures, sentiment conditions, and nature-inspired pattern models.
 
-Built by Anteroom Studio as part of its research systems and intelligence tooling.
+Developed within Anteroom Studio, the company founded by ZAI. ZAI Genesis is one research program, not the ZAI intelligence project itself.
 
 ---
 
@@ -114,4 +114,4 @@ This project does not provide financial, investment, legal, or professional advi
 Anteroom Studio  
 Research systems, intelligence interfaces, and experimental software.
 
-Research and implementation by ZAI (Zawwar Sami).
+ZAI Genesis is maintained within Anteroom Studio.
