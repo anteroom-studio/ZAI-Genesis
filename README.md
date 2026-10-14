@@ -38,6 +38,31 @@ A worked *illustration* (not a recorded run): if four of seven engines are bulli
 
 ---
 
+
+## A reproducible, zero-market-data starting point
+
+Before trusting a market prediction, inspect what the agreement calculation itself does. This deterministic probe uses the repository's existing `calculate_agreement_score` function and then removes one engine at a time:
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/agreement_probe.py
+```
+
+With no input file, it uses an explicitly **synthetic** seven-engine example (four bullish, two bearish, one neutral). Expected output includes an agreement score of **+28.6**, an overall **MILDLY BULLISH** label, and an **85.7% non-neutral fraction**. That last percentage is not a calibrated probability.
+
+To inspect signals from a local Genesis run rather than the synthetic example:
+
+```bash
+python scripts/agreement_probe.py --input genesis_data/predictions/latest.json
+```
+
+The report prints per-engine sensitivity and the resulting label if each engine is removed. It does **not** measure historical forecast skill. The next research step is timestamped, leakage-free out-of-sample evaluation against a prespecified baseline, as proposed in [Research Challenge #1](https://github.com/anteroom-studio/ZAI-Genesis/issues/1).
+
+```bash
+python -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+
 ## Run it
 
 Use a Python environment with the requirements installed:
